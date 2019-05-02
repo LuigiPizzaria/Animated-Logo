@@ -1,0 +1,65 @@
+.logo{
+  width:500px;
+  height: 500px
+}
+
+.st {
+  stroke: #2E3643;
+  stroke-width:1;
+  stroke-dasharray: 1150;
+  stroke-dashoffset: 1150;
+  animation: dash 5s linear forwards, fillBlue 5s linear forwards;
+
+}
+
+
+.st1{
+  stroke: #2E3643;
+  stroke-width:1;
+  stroke-dasharray: 3800;
+  stroke-dashoffset: 3800;
+  animation: dash 3s linear forwards,fillBlue 3s linear forwards;
+}
+.st0{
+  stroke: #E46162;
+  stroke-width:1;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  animation: dash 5s linear forwards, fillRed 5s linear forwards;
+}
+
+@keyframes dash{
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fillRed{
+
+  0%{
+    fill: rgba(0,0,0,0);
+  }
+  75%{
+    fill: rgba(0,0,0,0);
+  }
+
+  100%{
+    fill: rgba(228, 97, 98, 1);
+  }
+
+}
+
+@keyframes fillBlue{
+
+  0%{
+    fill: rgba(0,0,0,0);
+  }
+  75%{
+    fill: rgba(0,0,0,0);
+  }
+
+  100%{
+    fill:rgba(46, 54, 67, 1);
+  }
+
+}
